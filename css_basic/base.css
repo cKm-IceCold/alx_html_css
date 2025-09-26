@@ -1,50 +1,47 @@
-/* Base styles for the project */
+/* Base styles shared across all pages */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: purple;
-    color: white; /* Set font color to white */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+  color: white;
 }
 
-h1, h2, h3 {
-    color: white; /* Headings also white */
-    text-align: center;
-}
-
-p {
-    line-height: 1.6;
-    color: white; /* Paragraphs white */
-    text-align: center;
-}
-
-.container {
-    width: 30%;
-    margin: auto;
-    overflow: hidden;
+h1, h2, h3, p {
+  text-align: center;
 }
 
 header {
-    background: purple;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+  background: purple;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.twitter-tweet {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
 
 footer {
-    background: #060608; /* Blue footer */
-    color: black; /* Footer text color black */
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #0000ff;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
 }
