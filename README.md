@@ -12,7 +12,6 @@ alx_html_css/
 │   ├── base.css
 │   └── styles.css
 └── README.md
-```
 
 ## Features
 
