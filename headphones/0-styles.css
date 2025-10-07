@@ -1,0 +1,249 @@
+.hero {
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+ 
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header container to hold logo and nav */
+.header {
+  display: flex;
+  justify-content: space-between;  /* logo left, nav right */
+  align-items: center;             /* vertically center them */
+  padding: 20px 50px;
+  height: 100px;
+  
+  margin-bottom: 10%;
+}
+
+.logo {
+  padding: 30px 100px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 40px;
+}
+
+.nav li {
+  cursor: pointer;
+  color: white;
+}
+
+.nav li:hover {
+  opacity: 0.9;
+  color: #FF6565;
+}
+
+.headline {
+  margin-bottom: 3%;
+ font-family: 'Source Sans Pro', sans-serif;
+  gap: 0%;
+}
+.headline h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  align-items: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.headline p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin: 0%;
+ 
+}
+
+#cta {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+   gap: 5%;
+   margin: 0%;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+#cta button {  /* Changed from .cta to #cta */
+  background-color: red;
+  border-radius: 22px;  /* Changed from 40% - that makes it egg-shaped! */
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+#cta button:hover {
+  background-color: #FF6565;  /* nice hover effect */
+ opacity: 0.9;
+}
+
+.last {
+  color: white;
+  padding: 20px 40px;
+  line-height: 1.8;
+  text-align: center;
+  font-size:small;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;      /* adjust position */
+  right: 50px;    /* move it to the right corner */
+  z-index: 2000;  /* ensure it's on top */
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 872px) {
+
+  /* Show hamburger icon */
+  .menu-icon {
+    display: flex;
+   left: 20px; 
+   margin-top: 0%;
+   top: 65px;
+  }
+
+  /* Hide the nav by default */
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 80%;
+    text-align: left;
+    z-index: 1000;
+    background-color: black;
+    margin-bottom: 40px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+   
+  }
+
+  /* Show nav when checkbox is checked */
+  #menu-toggle:checked + .menu-icon + .nav {
+    display: block;
+  }
+
+  /* Animate icon when active */
+  #menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  #menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+.hero {
+  background-image: url("./images/background1.png");
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  background-size: cover;
+  height: 100vh;
+ 
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+  /* If .logo is inside a header or nav */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+ 
+  
+
+}
+
+.logo { 
+  padding: 10px;
+}
+ 
+  .headline {
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+
+  .headline h1 {
+    padding: 5px;
+    font-size:32px;
+    text-align:center;
+  }
+
+  .headline p {
+    display:block;
+    font-size:16px;
+    text-align:center;
+    margin: 0px;
+  }
+
+ .headline p span{
+  display: block;
+ }
+
+#cta button {  /* Changed from .cta to #cta */
+  background-color: red;
+  border-radius: 22px;  /* Changed from 40% - that makes it egg-shaped! */
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+#cta button:hover {
+  background-color: #FF6565;  /* nice hover effect */
+ opacity: 0.9;
+}
+
+
+}
