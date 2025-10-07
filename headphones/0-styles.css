@@ -17,7 +17,6 @@ body {
   align-items: center;             /* vertically center them */
   padding: 20px 50px;
   height: 100px;
-  
   margin-bottom: 10%;
 }
 
@@ -183,14 +182,10 @@ body {
   background-position: center 3px;
   background-size: cover;
   height: 100vh;
- 
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
-
-
-
 
   /* If .logo is inside a header or nav */
 .header {
