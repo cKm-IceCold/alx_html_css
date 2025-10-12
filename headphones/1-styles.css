@@ -1,0 +1,46 @@
+ p {
+  text-align:center;
+  margin-top: 50px;
+ }
+ 
+
+ .indent {
+  display: inline-block;  /* ensures each span respects line breaks */
+  padding-left: 3px;     /* creates the indent */
+}
+
+.icons {
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  margin-top: 95px;
+}
+.icons p {
+  display: flex;
+  justify-content:center; 
+}
+
+@media (max-width: 864px) {
+  p {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .indent {
+    display: inline-block;  /* ensures each span respects line breaks */
+    padding-left: 3px;      /* creates the indent */
+  }
+
+  .icons {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 95px;
+  }
+
+  .icons p {
+    display: flex;
+    justify-content: center; 
+  }
+}
+

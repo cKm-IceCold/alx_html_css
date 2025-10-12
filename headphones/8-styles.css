@@ -243,3 +243,58 @@ body {
 
 
 }
+
+/* FINAL FIX FOR HAMBURGER VISIBILITY ON ALL SMALL SCREENS */
+@media (max-width: 480px) {
+  /* Make sure the menu icon always shows */
+  .menu-icon {
+    display: flex !important;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 3000; /* stays on top of everything */
+  }
+
+  /* Ensure nav hides by default */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 80px; /* just below the header */
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2000;
+  }
+
+  /* When nav is active, show it */
+  .nav.active ul {
+    display: flex !important;
+  }
+
+  /* Animate menu icon when open */
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Optional — style the nav links */
+  .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  .nav ul li a:hover {
+    color: #FF6565;
+  }
+}
+

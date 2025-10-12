@@ -1,0 +1,84 @@
+.dash {
+  display: flex;
+  flex-direction: column; /* so the dashes and button stack vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh; /* full screen */
+  color: black; /* makes text visible */
+  text-align: center;
+}
+
+.buttin {
+  margin-top: 20px; /* gives a little space above button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 100vh; /* optional – full height center */
+}
+
+
+  .fcta {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin: 0;
+  background-color: red;
+  border-radius: 22px;
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fcta:hover {
+  background-color: #ff6565;
+  opacity: 0.9;
+}
+
+
+@media (max-width: 864px) {
+
+.dash {
+  display: flex;
+  flex-direction: column; /* so the dashes and button stack vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh; /* full screen */
+  color: black; /* makes text visible */
+  text-align: center;
+}
+
+.buttin {
+  margin-top: 20px; /* gives a little space above button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  height: 100vh; /* optional – full height center */
+}
+
+
+  .fcta {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin: 0;
+  background-color: red;
+  border-radius: 22px;
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fcta:hover {
+  background-color: #ff6565;
+  opacity: 0.9;
+}
+
+}
